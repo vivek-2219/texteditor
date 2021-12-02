@@ -39,13 +39,13 @@ export default function Input(props) {
                     <label className="form-label"><h1>{props.heading}</h1></label>
                     <textarea className="form-control" id="textInput" style={{backgroundColor: props.backColor, color: props.textColor}} rows="13" placeholder="Enter Your Text Here" value={text} onChange={changeEvent}>{text}</textarea>
                 </div>
-                <button className={`btn btn-${props.mode} mx-2`} onClick={upperCase}>Convert to Upper Case</button>
-                <button className={`btn btn-${props.mode} mx-2`} onClick={lowerCase}>Convert to Lower Case</button>
-                <button className={`btn btn-${props.mode} mx-2`} onClick={snakeCase}>Convert to Snake Case</button>
-                <button className={`btn btn-${props.mode} mx-2`} onClick={removeSnakeCase}>Remove Snake Case</button>
-                <button className={`btn btn-${props.mode} mx-2`} onClick={copyText}>Copy to Clipboard</button>
-                <button className={`btn btn-${props.mode} mx-2`} onClick={selectText}>Select All the Text</button>
-                <button className={`btn btn-${props.mode} mx-2`} onClick={clearText}>Clear All the Text</button>
+                <button className={`btn btn-${props.mode} mx-2 my-2`} onClick={upperCase}>Convert to Upper Case</button>
+                <button className={`btn btn-${props.mode} mx-2 my-2`} onClick={lowerCase}>Convert to Lower Case</button>
+                <button className={`btn btn-${props.mode} mx-2 my-2`} onClick={snakeCase}>Convert to Snake Case</button>
+                <button className={`btn btn-${props.mode} mx-2 my-2`} onClick={removeSnakeCase}>Remove Snake Case</button>
+                <button className={`btn btn-${props.mode} mx-2 my-2`} onClick={copyText}>Copy to Clipboard</button>
+                <button className={`btn btn-${props.mode} mx-2 my-2`} onClick={selectText}>Select All the Text</button>
+                <button className={`btn btn-${props.mode} mx-2 my-2`} onClick={clearText}>Clear All the Text</button>
             </div>
             <div className="container my-4">
                 <h4 className="mx-4">{text.length} characters in your text.</h4>
