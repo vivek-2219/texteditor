@@ -12,24 +12,24 @@ export default function Navbar(props) {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                             <li className="nav-item">
-                                <a className={`nav-link text-${props.theme==='light'?'black':'light'}`} aria-current="page" href="/">Home</a>
+                                <a className={`nav-link text-${props.theme === 'light' ? 'black' : 'light'}`} aria-current="page" href="/">Home</a>
                             </li>
                             <li className="nav-item">
-                                <a className={`nav-link text-${props.theme==='light'?'black':'light'}`} href="/about">About</a>
+                                <a className={`nav-link text-${props.theme === 'light' ? 'black' : 'light'}`} href="/">About</a>
                             </li>
                             <li className="nav-item">
-                                <a className={`nav-link text-${props.theme==='light'?'black':'light'}`} href="contact">Contact</a>
+                                <a className={`nav-link text-${props.theme === 'light' ? 'black' : 'light'}`} href="/">Contact</a>
                             </li>
                         </ul>
                         <form className="d-flex">
                             <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
                             <button className={`btn btn-outline-secondary text-${props.textColor}`} type="submit">Search</button>
                         </form>
-                        <div className="dropdown">
+                        <div class="dropdown my-2">
                             <button className={`btn btn-${props.mode} dropdown-toggle mx-4`} type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                                 Select Theme
                             </button>
-                            <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                                 <li><div className="dropdown-item" onClick={props.lightMode}>Light</div></li>
                                 <li><div className="dropdown-item" onClick={props.darkMode}>Dark</div></li>
                                 <li><div className="dropdown-item" onClick={props.cobaltMode}>Cobalt</div></li>
